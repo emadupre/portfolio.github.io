@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+.fondo img {
+  display: flex;
+  position: fixed;
+  z-index: -100;
+  padding-top: 5%;
+  padding-left: 60%;
+  size: 60% auto;
+  filter: blur(0.5px);
+  -webkit-filter: blur(1px);
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  font-family: "Archivo", sans-serif;
+  overflow: auto;
+}
+
+.main-container {
+  flex: 1; /* Hace que el main-container ocupe el espacio disponible */
+  max-width: 1200px; /* O el valor que prefieras */
+  margin: 0 auto; /* Centra el contenedor principal */
+  padding: 0 20px; /* Espaciado a los lados */
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    max-width: 100%;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+}
+
+#vermas button {
+  background-color: #3d67d6;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Presentacion */
+.presentacion {
+  padding-top: 10%;
+}
+
+.presentacion h1 {
+  font-size: 61px;
+  font-weight: bold;
+  color: #3d67d6;
+}
+
+#descargar {
+  background-color: #3d67d6;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+#descargar:hover {
+  background-color: #ffffff;
+  color: #3d67d6;
+  border-color: #3d67d6;
+}
+
+.redes button {
+  border-color: #3d67d6;
+  color: #3d67d6;
+  background-color: #ffffff;
+  font-weight: lighter;
+}
+
+.redes button:hover {
+  border-color: #3d67d6;
+  color: #ffffff;
+  background-color: #3d67d6;
+  font-weight: lighter;
+}
+
+.presentacion h2 {
+  font-weight: 300;
+  font-size: 35px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Proyectos */
+
+.proyectos {
+  margin-top: 15%;
+}
+
+/* Habilidades */
+.habilidades button {
+  border-color: #3d66d680;
+  color: #3d67d6;
+  background-color: #ffffff;
+  font-weight: lighter;
+}
+
+.habilidades button:hover {
+  border-color: #3d66d680;
+  color: #ffffff;
+  background-color: #3d66d680;
+  font-weight: lighter;
+}
+
+.habilidades-btn {
+  padding: 10px 20px;
+}
+
+/* Estudios */
+
+
+/* Contacto */
+
+hr {
+  border: 1px solid #ffff;
+}
+
+.footer {
+  background-color: #203670;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px; /* O el mismo valor que usaste para .main-container */
+  margin: 0 auto; /* Centra el contenido del footer */
+  padding: 0 20px; /* Espaciado a los lados para el contenido del footer */
+  color: #ffffff; /* Color de texto blanco para contraste */
+  margin-top: 7%;
+}
+
+#copy {
+  color: #3d67d6;
+}

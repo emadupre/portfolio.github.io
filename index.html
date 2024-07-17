@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fondo">
+        <img src="src/llaves.svg" alt="Fondo de pantalla" />
+      </div>
+    <div class="main-container d-flex flex-column">
+      
+      <!-- Contenido principal -->
+      <div class="presentacion container">
+        <h1>Emanuel Dupre</h1>
+        <div class="d-flex pt-3">
+          <h2 class="pe-4">Desarrollador Web</h2>
+          <button
+            id="descargar"
+            type="button"
+            class="d-flex justify-content-center align-items-center btn border-1 rounded-5 text-center align-self-center fw-lighter"
+          >
+            <img src="src/download14x14.svg" alt="Download" class="ms-2 me-2" />
+            Descargar PDF
+          </button>
+        </div>
+        <div class="redes pt-3 d-flex align-items-center">
+          <button
+            type="button"
+            class="btn border-1 rounded-5 text-center align-self-center d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/linkedin13x13.svg"
+              alt="LinkedIn"
+              id="linkedin"
+              class="ms-1 me-2"
+            />
+            LinkedIn
+          </button>
+          <button
+            type="button"
+            class="btn border-1 m-1 rounded-5 text-center align-self-center d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/github13x13.svg"
+              alt="GitHub"
+              id="github"
+              class="ms-1 me-2"
+            />
+            GitHub
+          </button>
+          <button
+            type="button"
+            class="btn border-1 rounded-5 text-center align-self-center d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/twitter13x13.svg"
+              alt="Twitter"
+              id="twitter"
+              class="ms-1 me-2"
+            />
+            Twitter
+          </button>
+        </div>
+        <p class="pt-5">
+          <b class="text-primary fw-bold">Creador de programas eficientes,</b>
+          aplicando mi conocimiento y<br />
+          aprendizaje en distintos rubros para cumplir un objetivo
+        </p>
+      </div>
+
+      <div class="proyectos text-center container mb-3">
+        <h3 class="fw-semibold mb-5">
+          <img
+            class="me-3"
+            src="src/monitor33x29.svg"
+            alt="Proyectos propios"
+            id="iconProyecto"
+          />
+          Proyectos
+        </h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="src/proyecto portfolio.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Portfolio</h5>
+                <p class="card-text fw-lighter">
+                  Acá quiero poner en practica mi conocimiento en HTML, CSS,
+                  JavaScript y Bootstrap.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Proyecto Actual</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="src/abm-personas.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ABM de Personas</h5>
+                <p class="card-text fw-lighter">
+                  Practica de conocimientos en PHP y MySQL, phpAdmin, HTML, CSS,
+                  BOOTSTRAP y JavaScript.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Mayo - Junio 2024</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="src/votaciones-electronicas.png" class="card-img-top" alt="Proyecto Votacion Electronica - Programacion 2" />
+              <div class="card-body">
+                <h5 class="card-title">Votacion Electronica</h5>
+                <p class="card-text fw-lighter">
+                  Practica de conocimientos en Java, MySQL, phpAdmin, JetBeans.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Agosto - Octubre 2023</smal>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="Proyecto Votacion Electronica - Programacion 1" />
+              <div class="card-body">
+                <h5 class="card-title">ABM de Tienda</h5>
+                <p class="card-text fw-lighter">
+                  Practica de conocimientos en C, utilizando CodeBlocks.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Agosto - Octubre 2022</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="vermas" class="d-flex justify-content-center align-items-center">
+        <button
+          type="button"
+          class="btn border-1 rounded-5 text-center d-flex justify-content-center align-items-center mt-3"
+        >
+          <img src="src/vermas6x10.svg" alt="ver-mas" class="me-2" />
+          Ver más
+        </button>
+      </div>
+
+      <div class="text-center container p-2 mt-5">
+        <h3 class="fw-semibold">
+          <img
+            class="me-3"
+            src="src/dev43x29.svg"
+            alt="Simbolos, alucion a conocimientos como desarollador"
+          />
+          Habilidades
+        </h3>
+        <div
+          class="habilidades d-flex mt-4 m-3 mb-5 container justify-content-center align-items-center text-center fw-bold"
+          role="group"
+        >
+          <button
+            type="button"
+            class="btn px-3 habilidades-btn border-1 rounded-5 m-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/html.svg"
+              width="30px"
+              height="30px"
+              alt="html"
+              class="align-items-center me-2"
+            />HTML
+          </button>
+          <button
+            type="button"
+            class="btn px-3 habilidades-btn border-1 rounded-5 m-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/css.svg"
+              width="30px"
+              height="30px"
+              alt="css"
+              class="align-items-center me-2"
+              id="css"
+            />CSS
+          </button>
+          <button
+            type="button"
+            class="btn px-3 habilidades-btn border-1 rounded-5 m-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/bootstrap.svg"
+              width="30px"
+              height="30px"
+              alt="bootstrap"
+              class="align-items-center me-2"
+              id="boostrap"
+            />
+            Bootstrap
+          </button>
+          <button
+            type="button"
+            class="btn px-3 habilidades-btn border-1 rounded-5 m-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/javascript.svg"
+              width="30px"
+              height="30px"
+              alt="javascript"
+              class="align-items-center me-2"
+              id="javascript"
+            />
+            JavaScript
+          </button>
+          <button
+            type="button"
+            class="btn px-3 habilidades-btn border-1 rounded-5 m-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/php.svg"
+              width="30px"
+              height="30px"
+              alt="php"
+              class="align-items-center me-2"
+              id="php"
+            />PHP
+          </button>
+          <button
+            type="button"
+            class="btn px-3 habilidades-btn border-1 rounded-5 m-1 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="src/mysql.svg"
+              width="30px"
+              height="30px"
+              alt="mysql"
+              class="align-items-center me-2"
+              id="mysql"
+            />MySQL
+          </button>
+        </div>
+      </div>
+
+      <div class="estudios text-center">
+        <h3 class="fw-semibold">
+          <img
+            class="me-3"
+            src="src/estudio36x33.svg"
+            alt="Gorro de egresado"
+          />
+          Estudios
+        </h3>
+      </div>
+    </div>
+    <div id="vermas" class="d-flex justify-content-center align-items-center">
+      <button
+        type="button"
+        class="btn border-1 rounded-5 text-center d-flex justify-content-center align-items-center mt-3 mb-5"
+      >
+        <img src="src/vermas6x10.svg" alt="ver-mas" class="me-2" />
+        Ver más
+      </button>
+    </div>
+
+    <footer class="text-center footer">
+      <div class="footer-content">
+        <h2 class="fw-semibold text-white">
+          <img
+            class="me-3"
+            src="src/manito27x29.svg"
+            alt="Manito para indicar contacto"
+          />
+          Contacto
+        </h2>
+        <div
+          class="d-flex container justify-content-center mt-4 align-items-center"
+        >
+          <button
+            class="btn btn-light btn-lg bg-transparent rounded-5 justify-content-center align-items-center text-white fw-lighter"
+          >
+            <img
+              src="src/carta15x12.svg"
+              alt="carta"
+              class="me-1"
+            />dupre.dev@gmail.com
+          </button>
+          <button
+            id="copy"
+            class="d-flex m-2 btn btn-light btn-lg rounded-5 justify-content-center align-items-center"
+          >
+            <img src="src/copy14x16.svg" alt="Copy" class="p-1" />Copiar
+          </button>
+        </div>
+        <hr class="mt-5" />
+        <p class="mt-5 text-white fw-lighter">
+          Desarrollado por y para Emanuel Dupre with ❤️.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
