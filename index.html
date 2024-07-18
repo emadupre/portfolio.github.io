@@ -14,12 +14,10 @@
   </head>
   <body>
     <div class="fondo">
-        <img src="src/llaves.svg" alt="Fondo de pantalla" />
-      </div>
+      <img src="src/llaves.svg" alt="Fondo de pantalla" />
+    </div>
     <div class="main-container d-flex flex-column">
-      
-      <!-- Contenido principal -->
-      <div class="presentacion container">
+      <section class="presentacion container">
         <h1>Emanuel Dupre</h1>
         <div class="d-flex pt-3">
           <h2 class="pe-4">Desarrollador Web</h2>
@@ -75,9 +73,9 @@
           aplicando mi conocimiento y<br />
           aprendizaje en distintos rubros para cumplir un objetivo
         </p>
-      </div>
+      </section>
 
-      <div class="proyectos text-center container mb-3">
+      <section class="proyectos text-center container mb-3">
         <h3 class="fw-semibold mb-5">
           <img
             class="me-3"
@@ -93,7 +91,7 @@
               <img
                 src="src/proyecto portfolio.png"
                 class="card-img-top"
-                alt="..."
+                alt="Portfolio"
               />
               <div class="card-body">
                 <h5 class="card-title">Portfolio</h5>
@@ -109,7 +107,11 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="src/abm-personas.png" class="card-img-top" alt="..." />
+              <img
+                src="src/abm-personas.png"
+                class="card-img-top"
+                alt="ABM de Personas"
+              />
               <div class="card-body">
                 <h5 class="card-title">ABM de Personas</h5>
                 <p class="card-text fw-lighter">
@@ -124,7 +126,11 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="src/votaciones-electronicas.png" class="card-img-top" alt="Proyecto Votacion Electronica - Programacion 2" />
+              <img
+                src="src/votaciones-electronicas.png"
+                class="card-img-top"
+                alt="Votacion Electronica"
+              />
               <div class="card-body">
                 <h5 class="card-title">Votacion Electronica</h5>
                 <p class="card-text fw-lighter">
@@ -132,13 +138,13 @@
                 </p>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">Agosto - Octubre 2023</smal>
+                <small class="text-body-secondary">Agosto - Octubre 2023</small>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card">
-              <img src="..." class="card-img-top" alt="Proyecto Votacion Electronica - Programacion 1" />
+              <img src="..." class="card-img-top" alt="ABM de Tienda" />
               <div class="card-body">
                 <h5 class="card-title">ABM de Tienda</h5>
                 <p class="card-text fw-lighter">
@@ -151,8 +157,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="vermas" class="d-flex justify-content-center align-items-center">
+      </section>
+
+      <div
+        id="vermas-proyectos"
+        class="d-flex justify-content-center align-items-center"
+      >
         <button
           type="button"
           class="btn border-1 rounded-5 text-center d-flex justify-content-center align-items-center mt-3"
@@ -162,7 +172,7 @@
         </button>
       </div>
 
-      <div class="text-center container p-2 mt-5">
+      <section class="text-center container p-2 mt-5">
         <h3 class="fw-semibold">
           <img
             class="me-3"
@@ -224,22 +234,7 @@
               height="30px"
               alt="javascript"
               class="align-items-center me-2"
-              id="javascript"
-            />
-            JavaScript
-          </button>
-          <button
-            type="button"
-            class="btn px-3 habilidades-btn border-1 rounded-5 m-1 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="src/php.svg"
-              width="30px"
-              height="30px"
-              alt="php"
-              class="align-items-center me-2"
-              id="php"
-            />PHP
+            />JavaScript
           </button>
           <button
             type="button"
@@ -249,38 +244,42 @@
               src="src/mysql.svg"
               width="30px"
               height="30px"
-              alt="mysql"
+              alt="MySQL"
               class="align-items-center me-2"
-              id="mysql"
             />MySQL
           </button>
         </div>
-      </div>
+      </section>
 
-      <div class="estudios text-center">
-        <h3 class="fw-semibold">
-          <img
-            class="me-3"
-            src="src/estudio36x33.svg"
-            alt="Gorro de egresado"
-          />
-          Estudios
-        </h3>
-      </div>
-    </div>
-    <div id="vermas" class="d-flex justify-content-center align-items-center">
-      <button
-        type="button"
-        class="btn border-1 rounded-5 text-center d-flex justify-content-center align-items-center mt-3 mb-5"
-      >
-        <img src="src/vermas6x10.svg" alt="ver-mas" class="me-2" />
-        Ver más
-      </button>
+      <section class="text-center container p-2 mt-5">
+        <div class="estudios text-center">
+          <h3 class="fw-semibold">
+            <img
+              class="me-3"
+              src="src/estudio36x33.svg"
+              alt="Gorro de egresado"
+            />
+            Estudios
+          </h3>
+        </div>
+        <div
+          id="vermas"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <button
+            type="button"
+            class="btn border-1 rounded-5 text-center d-flex justify-content-center align-items-center mt-3 mb-5"
+          >
+            <img src="src/vermas6x10.svg" alt="ver-mas" class="me-2" />
+            Ver más
+          </button>
+        </div>
+      </section>
     </div>
 
-    <footer class="text-center footer">
-      <div class="footer-content">
-        <h2 class="fw-semibold text-white">
+    <footer class="text-center footer py-4">
+      <div class="footer-content container">
+        <h2 class="fw-semibold text-white" id="contacto">
           <img
             class="me-3"
             src="src/manito27x29.svg"
@@ -288,30 +287,40 @@
           />
           Contacto
         </h2>
-        <div
-          class="d-flex container justify-content-center mt-4 align-items-center"
-        >
+        <div class="d-flex justify-content-center align-items-center pb-4">
           <button
-            class="btn btn-light btn-lg bg-transparent rounded-5 justify-content-center align-items-center text-white fw-lighter"
+            class="btn btn-lg bg-transparent border-white rounded-5 text-white fw-lighter fs-6 d-flex align-items-center"
+            onclick="window.location.href='mailto:dupre.dev@gmail.com';"
           >
-            <img
-              src="src/carta15x12.svg"
-              alt="carta"
-              class="me-1"
-            />dupre.dev@gmail.com
+            <img src="src/carta15x12.svg" alt="carta" class="me-2 ms-2" />
+            dupre.dev@gmail.com
           </button>
           <button
             id="copy"
-            class="d-flex m-2 btn btn-light btn-lg rounded-5 justify-content-center align-items-center"
+            class="btn btn-lg rounded-5 fs-6 d-flex align-items-center ms-3"
+            onclick="copyToClipboard('dupre.dev@gmail.com')"
           >
-            <img src="src/copy14x16.svg" alt="Copy" class="p-1" />Copiar
+            <img src="src/copy14x16.svg" alt="Copiar" class="me-2 copy-icon" />
+            Copiar
           </button>
         </div>
-        <hr class="mt-5" />
-        <p class="mt-5 text-white fw-lighter">
+        <hr/>
+        <p class="text-white fw-lighter fs-6">
           Desarrollado por y para Emanuel Dupre with ❤️.
         </p>
       </div>
     </footer>
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(
+          function () {
+            alert("Correo copiado al portapapeles.");
+          },
+          function (err) {
+            console.error("No se pudo copiar el texto: ", err);
+          }
+        );
+      }
+    </script>
   </body>
 </html>
