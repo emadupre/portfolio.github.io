@@ -1,179 +1,758 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#0d1222" media="(prefers-color-scheme: dark)" />
-  <title>Emanuel Dupre · Desarrollador Full Stack</title>
-  <meta name="description" content="Portfolio de Emanuel Dupre, desarrollador full stack de Villa Mercedes, San Luis, Argentina." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-download" viewBox="0 0 24 24"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/><path d="M7 11l5 5l5-5"/><path d="M12 4v12"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 0 0-4 0"/><path d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-10a4 4 0 0 1-4-4z"/></symbol><symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0c-2.4-1.6-3.5-1.3-3.5-1.3a4.2 4.2 0 0 0-.1 3.2a4.6 4.6 0 0 0-1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2v3.5"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4l11.733 16h4.267l-11.733-16z"/><path d="M4 20l6.768-6.768m2.46-2.46l6.772-6.772"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2z"/><path d="M3 7l9 6l9-6"/></symbol><symbol id="i-copy" viewBox="0 0 24 24"><path d="M7 9.667a2.667 2.667 0 0 1 2.667-2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1-2.667 2.667h-8.666a2.667 2.667 0 0 1-2.667-2.667z"/><path d="M4.012 16.737a2.005 2.005 0 0 1-1.012-1.737v-10c0-1.1.9-2 2-2h10c.75 0 1.158.385 1.5 1"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5l10-10"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M17 7l-10 10"/><path d="M8 7h9v9"/></symbol><symbol id="i-code" viewBox="0 0 24 24"><path d="M7 8l-4 4l4 4"/><path d="M17 8l4 4l-4 4"/><path d="M14 4l-4 16"/></symbol></svg>
-  <img class="llave llave-a" src="./src/%7B.svg" alt="" aria-hidden="true" />
-  <img class="llave llave-b" src="./src/%7D.svg" alt="" aria-hidden="true" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#f5f5f5"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0d1222"
+      media="(prefers-color-scheme: dark)"
+    />
+    <title>Emanuel Dupre · Desarrollador Full Stack</title>
+    <meta
+      name="description"
+      content="Portfolio de Emanuel Dupre, desarrollador full stack de Villa Mercedes, San Luis, Argentina."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+        <path d="M7 11l5 5l5-5" />
+        <path d="M12 4v12" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path d="M8 11v5" />
+        <path d="M8 8v.01" />
+        <path d="M12 16v-5" />
+        <path d="M16 16v-3a2 2 0 0 0-4 0" />
+        <path
+          d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-10a4 4 0 0 1-4-4z"
+        />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0c-2.4-1.6-3.5-1.3-3.5-1.3a4.2 4.2 0 0 0-.1 3.2a4.6 4.6 0 0 0-1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2v3.5"
+        />
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 24 24">
+        <path d="M4 4l11.733 16h4.267l-11.733-16z" />
+        <path d="M4 20l6.768-6.768m2.46-2.46l6.772-6.772" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <path
+          d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2z"
+        />
+        <path d="M3 7l9 6l9-6" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <path
+          d="M7 9.667a2.667 2.667 0 0 1 2.667-2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1-2.667 2.667h-8.666a2.667 2.667 0 0 1-2.667-2.667z"
+        />
+        <path
+          d="M4.012 16.737a2.005 2.005 0 0 1-1.012-1.737v-10c0-1.1.9-2 2-2h10c.75 0 1.158.385 1.5 1"
+        />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="M5 12l5 5l10-10" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M17 7l-10 10" />
+        <path d="M8 7h9v9" />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="M7 8l-4 4l4 4" />
+        <path d="M17 8l4 4l-4 4" />
+        <path d="M14 4l-4 16" />
+      </symbol>
+    </svg>
+    <img class="llave llave-a" src="./src/%7B.svg" alt="" aria-hidden="true" />
+    <img class="llave llave-b" src="./src/%7D.svg" alt="" aria-hidden="true" />
 
-  <main>
-    <header class="hero">
-      <div class="idioma" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
-      <h1>Emanuel Dupre</h1>
-      <h2>Desarrollador Full Stack</h2>
-      <p class="lugar">Villa Mercedes, San Luis, Argentina</p>
-      <div class="acciones">
-        <a id="cv" class="btn btn-fill" href="src/CV-Jesus-Emanuel-Garcia.pdf" download><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>Descargar CV</a>
-        <a class="btn" href="https://www.linkedin.com/in/emadupre/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
-        <a class="btn" href="https://github.com/emadupre" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
-        <a class="btn" href="https://x.com/dupredev" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg>X</a>
-      </div>
-      <p class="lead"><b>Creador de programas eficientes,</b> aplicando mi conocimiento y aprendizaje en distintos rubros para cumplir un objetivo.</p>
-    </header>
+    <main>
+      <header class="hero">
+        <div class="idioma" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es" aria-pressed="true">ES</button
+          ><button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <h1>Emanuel Dupre</h1>
+        <h2>Desarrollador Full Stack</h2>
+        <p class="lugar">Villa Mercedes, San Luis, Argentina</p>
+        <div class="acciones">
+          <a
+            id="cv"
+            class="btn btn-fill"
+            href="./src/CV-Jesus-Emanuel-Garcia.pdf"
+            download
+            ><svg class="ico" aria-hidden="true"><use href="#i-download" /></svg
+            >Descargar CV</a
+          >
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/emadupre/"
+            target="_blank"
+            rel="noopener"
+            ><svg class="ico" aria-hidden="true"><use href="#i-linkedin" /></svg
+            >LinkedIn</a
+          >
+          <a
+            class="btn"
+            href="https://github.com/emadupre"
+            target="_blank"
+            rel="noopener"
+            ><svg class="ico" aria-hidden="true"><use href="#i-github" /></svg
+            >GitHub</a
+          >
+          <a
+            class="btn"
+            href="https://x.com/dupredev"
+            target="_blank"
+            rel="noopener"
+            ><svg class="ico" aria-hidden="true"><use href="#i-x" /></svg>X</a
+          >
+        </div>
+        <p class="lead">
+          <b>Creador de programas eficientes,</b> aplicando mi conocimiento y
+          aprendizaje en distintos rubros para cumplir un objetivo.
+        </p>
+      </header>
 
-    <section>
-      <h3>Sobre mí</h3>
-      <p>Soy desarrollador y analista de sistemas. Trabajo con PHP, Laravel, Node.js y JavaScript, y me interesa el diseño de bases de datos, las APIs REST y el rendimiento web en celulares. Estudio la Tecnicatura en Desarrollo de Software, participé en el NASA Space Apps Challenge y sigo aprendiendo con proyectos propios y en equipo.</p>
-    </section>
+      <section>
+        <h3>Sobre mí</h3>
+        <p>
+          Soy desarrollador y analista de sistemas. Trabajo con PHP, Laravel,
+          Node.js y JavaScript, y me interesa el diseño de bases de datos, las
+          APIs REST y el rendimiento web en celulares. Estudio la Tecnicatura en
+          Desarrollo de Software, participé en el NASA Space Apps Challenge y
+          sigo aprendiendo con proyectos propios y en equipo.
+        </p>
+      </section>
 
-    <section>
-      <h3>Experiencia</h3>
-      <article class="item">
-        <div class="fila"><h4>Grupo Slots · Desarrollador Full Stack</h4><span>Sep – Dic 2025</span></div>
-        <ul>
-          <li>Desarrollé una plataforma web responsive de sorteos de fin de año, con más de 100.000 usuarios.</li>
-          <li>Mejoré el rendimiento en dispositivos móviles y construí 2 APIs para consultas del backend.</li>
-          <li>Migré la base de datos de más de 100.000 usuarios sin tiempo de inactividad.</li>
+      <section>
+        <h3>Experiencia</h3>
+        <article class="item">
+          <div class="fila">
+            <h4>Grupo Slots · Desarrollador Full Stack</h4>
+            <span>Sep – Dic 2025</span>
+          </div>
+          <ul>
+            <li>
+              Desarrollé una plataforma web responsive de sorteos de fin de año,
+              con más de 100.000 usuarios.
+            </li>
+            <li>
+              Mejoré el rendimiento en dispositivos móviles y construí 2 APIs
+              para consultas del backend.
+            </li>
+            <li>
+              Migré la base de datos de más de 100.000 usuarios sin tiempo de
+              inactividad.
+            </li>
+          </ul>
+          <p class="tags">PHP · JavaScript · MySQL · APIs REST</p>
+        </article>
+        <article class="item">
+          <div class="fila">
+            <h4>Olimpia Capital · Desarrollador Full Stack</h4>
+            <span>Dic 2024 – Ene 2025</span>
+          </div>
+          <ul>
+            <li>
+              Diseñé y desarrollé desde cero una landing page financiera que
+              creció hasta ser una plataforma con APIs de criptomonedas, casas
+              de cambio y dólar MEP.
+            </li>
+            <li>Llegó a más de 50 usuarios activos en 12 empresas.</li>
+          </ul>
+          <p class="tags">PHP · Laravel · PostgreSQL · Bootstrap</p>
+        </article>
+      </section>
+
+      <section>
+        <h3>Proyectos</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>Ares Arcadia</h4>
+            <small>NASA Space Apps Challenge · 2026</small>
+            <p>
+              Prototipo web bilingüe para el desafío Interplanetary Survival
+              Guide: Martian Map. Planifica una caminata espacial en Marte con
+              mapas reales de NASA y USGS, rutas que evitan pendientes de más de
+              18° y control de radiación.
+            </p>
+            <p class="tags">
+              TypeScript · React · Three.js · Vite · Web Workers · Vitest
+            </p>
+            <div class="links">
+              <a
+                href="https://ares-arcadia.vercel.app"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+                >Ver demo</a
+              ><a
+                href="https://github.com/emadupre/ares-arcadia"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-github" /></svg
+                >Código</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <h4>KioscoPOS</h4>
+            <small
+              >Proyecto final · Laboratorio de Programación II · 2026</small
+            >
+            <p>
+              Sistema de punto de venta para un kiosco 24 horas con tres turnos:
+              ventas con carrito y código de barras, compras a proveedores,
+              stock auditable y caja por turno con arqueo. Incluye una Web API
+              REST con JWT.
+            </p>
+            <p class="tags">
+              ASP.NET Core MVC · Web API · Entity Framework Core · MySQL · JWT ·
+              Vue.js
+            </p>
+            <div class="links">
+              <a
+                href="https://github.com/emadupre/Laboratorio-II-KioscoElRepo"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-github" /></svg
+                >Código</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <h4>Fotaza</h4>
+            <small>Proyecto final · Programación Web II · 2026</small>
+            <p>
+              Plataforma para compartir fotografías con licencias, marcas de
+              agua, valoraciones, colecciones, seguimiento entre usuarios y
+              panel de moderación.
+            </p>
+            <p class="tags">Node.js · Express · PostgreSQL · Sequelize · Pug</p>
+            <div class="links">
+              <a
+                href="https://fotaza-z6pl.onrender.com"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+                >Ver demo</a
+              ><a
+                href="https://github.com/emadupre/fotaza"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-github" /></svg
+                >Código</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <h4>Mateclado</h4>
+            <small>Proyecto personal educativo · 2026</small>
+            <p>
+              Test de velocidad de tipeo que hice para aprender Vue 3 y
+              practicar el manejo de estado y rutas.
+            </p>
+            <p class="tags">Vue 3 · Pinia · Vue Router · Supabase · Vite</p>
+            <div class="links">
+              <a
+                href="https://github.com/emadupre/mateclado"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-github" /></svg
+                >Código</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <h4>Caraxes Inmobiliaria</h4>
+            <small>Proyecto en equipo · Laboratorio 2</small>
+            <p>
+              Sistema de alquileres temporarios con propietarios, inquilinos,
+              inmuebles, reservas, pagos, mapas y roles de usuario.
+            </p>
+            <p class="tags">
+              ASP.NET Core MVC · ADO.NET · MySQL · Bootstrap · Leaflet
+            </p>
+            <div class="links">
+              <a
+                href="https://github.com/josebossa3-cmyk/Caraxees-inmobiliaria-lab2"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-github" /></svg
+                >Código</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <h4>Proyecto Transversal</h4>
+            <small>Equipo de seis · Universidad de La Punta · 2025</small>
+            <p>
+              Sistema de gestión universitaria: alta, baja y modificación de
+              alumnos y materias, inscripciones y registro de calificaciones.
+            </p>
+            <p class="tags">Java · MariaDB · SQL</p>
+            <div class="links">
+              <a
+                href="https://github.com/emadupre/ProyectoTransversal-1"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" aria-hidden="true">
+                  <use href="#i-github" /></svg
+                >Código</a
+              >
+            </div>
+          </article>
+        </div>
+        <h4 class="sub">Otros proyectos</h4>
+        <ul class="otros">
+          <li>
+            <b>Gestor para cine</b><span>Java · MySQL · UML</span
+            ><em>Univ. de La Punta</em>
+          </li>
+          <li>
+            <b>Votación electrónica</b><span>Java · MySQL</span><em>2023</em>
+          </li>
+          <li>
+            <a
+              href="https://github.com/emadupre/CRUD_PHP"
+              target="_blank"
+              rel="noopener"
+              >ABM de personas</a
+            ><span>PHP · MySQL · JavaScript</span><em>2024</em>
+          </li>
+          <li><b>ABM de tienda</b><span>C</span><em>2022</em></li>
+          <li>
+            <a
+              href="https://github.com/emadupre/cafeteria"
+              target="_blank"
+              rel="noopener"
+              >Cafetería</a
+            ><span>HTML · CSS · JavaScript</span><em>2024</em>
+          </li>
+          <li>
+            <a
+              href="https://github.com/emadupre/Reservas"
+              target="_blank"
+              rel="noopener"
+              >Landing pages de estética</a
+            ><span>HTML · CSS</span><em>2025</em>
+          </li>
         </ul>
-        <p class="tags">PHP · JavaScript · MySQL · APIs REST</p>
-      </article>
-      <article class="item">
-        <div class="fila"><h4>Olimpia Capital · Desarrollador Full Stack</h4><span>Dic 2024 – Ene 2025</span></div>
-        <ul>
-          <li>Diseñé y desarrollé desde cero una landing page financiera que creció hasta ser una plataforma con APIs de criptomonedas, casas de cambio y dólar MEP.</li>
-          <li>Llegó a más de 50 usuarios activos en 12 empresas.</li>
-        </ul>
-        <p class="tags">PHP · Laravel · PostgreSQL · Bootstrap</p>
-      </article>
-    </section>
+        <p class="mas">
+          <a
+            href="https://github.com/emadupre?tab=repositories"
+            target="_blank"
+            rel="noopener"
+            >Ver todos los repositorios en GitHub</a
+          >
+        </p>
+      </section>
 
-    <section>
-      <h3>Proyectos</h3>
-      <div class="grid">
-        <article class="card">
-          <h4>Ares Arcadia</h4>
-          <small>NASA Space Apps Challenge · 2026</small>
-          <p>Prototipo web bilingüe para el desafío Interplanetary Survival Guide: Martian Map. Planifica una caminata espacial en Marte con mapas reales de NASA y USGS, rutas que evitan pendientes de más de 18° y control de radiación.</p>
-          <p class="tags">TypeScript · React · Three.js · Vite · Web Workers · Vitest</p>
-          <div class="links"><a href="https://ares-arcadia.vercel.app" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>Ver demo</a><a href="https://github.com/emadupre/ares-arcadia" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>Código</a></div>
+      <section>
+        <h3>Habilidades</h3>
+        <dl class="skills">
+          <dt>Frontend</dt>
+          <dd>
+            <span
+              ><img
+                src="./src/icons/html5.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />HTML</span
+            ><span
+              ><img
+                src="./src/icons/css3.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />CSS</span
+            ><span
+              ><img
+                src="./src/icons/javascript.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />JavaScript</span
+            ><span
+              ><img
+                src="./src/icons/typescript.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />TypeScript</span
+            ><span
+              ><img
+                src="./src/icons/react.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />React</span
+            ><span
+              ><img
+                src="./src/icons/vuejs.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Vue.js</span
+            ><span
+              ><img
+                src="./src/icons/threejs.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Three.js</span
+            ><span
+              ><img
+                src="./src/icons/bootstrap.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Bootstrap</span
+            >
+          </dd>
+          <dt>Backend</dt>
+          <dd>
+            <span
+              ><img
+                src="./src/icons/nodejs.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Node.js</span
+            ><span
+              ><img
+                src="./src/icons/express.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Express</span
+            ><span
+              ><img
+                src="./src/icons/php.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />PHP</span
+            ><span
+              ><img
+                src="./src/icons/laravel.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Laravel</span
+            ><span
+              ><img
+                src="./src/icons/csharp.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />C#</span
+            ><span
+              ><img
+                src="./src/icons/dotnetcore.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />ASP.NET Core</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >Entity Framework</span
+            ><span
+              ><img
+                src="./src/icons/java.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Java</span
+            ><span
+              ><img
+                src="./src/icons/c.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />C</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >APIs REST</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >JWT</span
+            >
+          </dd>
+          <dt>Datos</dt>
+          <dd>
+            <span
+              ><img
+                src="./src/icons/postgresql.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />PostgreSQL</span
+            ><span
+              ><img
+                src="./src/icons/mysql.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />MySQL</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >SQL</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >Sequelize</span
+            ><span
+              ><img
+                src="./src/icons/supabase.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Supabase</span
+            >
+          </dd>
+          <dt>Herramientas</dt>
+          <dd>
+            <span
+              ><img
+                src="./src/icons/git.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Git</span
+            ><span
+              ><img
+                src="./src/icons/github.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />GitHub</span
+            ><span
+              ><img
+                src="./src/icons/vitejs.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Vite</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >Vitest</span
+            ><span
+              ><img
+                src="./src/icons/postman.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Postman</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >UML</span
+            ><span
+              ><img
+                src="./src/icons/figma.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Figma</span
+            ><span
+              ><img
+                src="./src/icons/vercel.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Vercel</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >Render</span
+            >
+          </dd>
+          <dt>Aprendiendo</dt>
+          <dd>
+            <span
+              ><img
+                src="./src/icons/nextjs.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Next.js</span
+            ><span
+              ><img
+                src="./src/icons/docker.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Docker</span
+            ><span
+              ><svg class="ico" aria-hidden="true"><use href="#i-code" /></svg
+              >AWS</span
+            ><span
+              ><img
+                src="./src/icons/python.svg"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+              />Python</span
+            >
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>Estudios</h3>
+        <article class="item">
+          <div class="fila">
+            <h4>Tecnicatura en Desarrollo de Software</h4>
+            <span>Desde 2025</span>
+          </div>
+          <p>Universidad de La Punta, San Luis</p>
         </article>
-        <article class="card">
-          <h4>KioscoPOS</h4>
-          <small>Proyecto final · Laboratorio de Programación II · 2026</small>
-          <p>Sistema de punto de venta para un kiosco 24 horas con tres turnos: ventas con carrito y código de barras, compras a proveedores, stock auditable y caja por turno con arqueo. Incluye una Web API REST con JWT.</p>
-          <p class="tags">ASP.NET Core MVC · Web API · Entity Framework Core · MySQL · JWT · Vue.js</p>
-          <div class="links"><a href="https://github.com/emadupre/Laboratorio-II-KioscoElRepo" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>Código</a></div>
+        <article class="item">
+          <div class="fila">
+            <h4>Programador Universitario en Sistemas</h4>
+            <span>Desde 2022</span>
+          </div>
+          <p>Universidad Nacional de Villa Mercedes</p>
         </article>
-        <article class="card">
-          <h4>Fotaza</h4>
-          <small>Proyecto final · Programación Web II · 2026</small>
-          <p>Plataforma para compartir fotografías con licencias, marcas de agua, valoraciones, colecciones, seguimiento entre usuarios y panel de moderación.</p>
-          <p class="tags">Node.js · Express · PostgreSQL · Sequelize · Pug</p>
-          <div class="links"><a href="https://fotaza-z6pl.onrender.com" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>Ver demo</a><a href="https://github.com/emadupre/fotaza" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>Código</a></div>
+        <article class="item">
+          <div class="fila">
+            <h4>Responsive Web Design</h4>
+            <span>2023</span>
+          </div>
+          <p>Certificación de freeCodeCamp</p>
         </article>
-        <article class="card">
-          <h4>Mateclado</h4>
-          <small>Proyecto personal educativo · 2026</small>
-          <p>Test de velocidad de tipeo que hice para aprender Vue 3 y practicar el manejo de estado y rutas.</p>
-          <p class="tags">Vue 3 · Pinia · Vue Router · Supabase · Vite</p>
-          <div class="links"><a href="https://github.com/emadupre/mateclado" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>Código</a></div>
-        </article>
-        <article class="card">
-          <h4>Caraxes Inmobiliaria</h4>
-          <small>Proyecto en equipo · Laboratorio 2</small>
-          <p>Sistema de alquileres temporarios con propietarios, inquilinos, inmuebles, reservas, pagos, mapas y roles de usuario.</p>
-          <p class="tags">ASP.NET Core MVC · ADO.NET · MySQL · Bootstrap · Leaflet</p>
-          <div class="links"><a href="https://github.com/josebossa3-cmyk/Caraxees-inmobiliaria-lab2" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>Código</a></div>
-        </article>
-        <article class="card">
-          <h4>Proyecto Transversal</h4>
-          <small>Equipo de seis · Universidad de La Punta · 2025</small>
-          <p>Sistema de gestión universitaria: alta, baja y modificación de alumnos y materias, inscripciones y registro de calificaciones.</p>
-          <p class="tags">Java · MariaDB · SQL</p>
-          <div class="links"><a href="https://github.com/emadupre/ProyectoTransversal-1" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg>Código</a></div>
-        </article>
+        <p class="idiomas">Idiomas: español nativo, inglés B1.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="pie">
+        <h3>Contacto</h3>
+        <div class="acciones">
+          <a class="btn btn-ghost" href="mailto:dupre.dev@gmail.com"
+            ><svg class="ico" aria-hidden="true"><use href="#i-mail" /></svg
+            >dupre.dev@gmail.com</a
+          >
+          <button id="copy" class="btn btn-fill-w" type="button">
+            <svg class="ico" aria-hidden="true"><use href="#i-copy" /></svg
+            ><span class="t-copy">Copiar correo</span
+            ><span class="t-ok">Copiado</span>
+          </button>
+        </div>
+        <hr />
+        <p>Desarrollado por y para Emanuel Dupre ❤️</p>
       </div>
-      <h4 class="sub">Otros proyectos</h4>
-      <ul class="otros"><li><b>Gestor para cine</b><span>Java · MySQL · UML</span><em>Univ. de La Punta</em></li><li><b>Votación electrónica</b><span>Java · MySQL</span><em>2023</em></li><li><a href="https://github.com/emadupre/CRUD_PHP" target="_blank" rel="noopener">ABM de personas</a><span>PHP · MySQL · JavaScript</span><em>2024</em></li><li><b>ABM de tienda</b><span>C</span><em>2022</em></li><li><a href="https://github.com/emadupre/cafeteria" target="_blank" rel="noopener">Cafetería</a><span>HTML · CSS · JavaScript</span><em>2024</em></li><li><a href="https://github.com/emadupre/Reservas" target="_blank" rel="noopener">Landing pages de estética</a><span>HTML · CSS</span><em>2025</em></li></ul>
-      <p class="mas"><a href="https://github.com/emadupre?tab=repositories" target="_blank" rel="noopener">Ver todos los repositorios en GitHub</a></p>
-    </section>
+    </footer>
 
-    <section>
-      <h3>Habilidades</h3>
-      <dl class="skills">
-        <dt>Frontend</dt><dd><span><img src="src/icons/html5.svg" alt="" width="18" height="18" loading="lazy" />HTML</span><span><img src="src/icons/css3.svg" alt="" width="18" height="18" loading="lazy" />CSS</span><span><img src="src/icons/javascript.svg" alt="" width="18" height="18" loading="lazy" />JavaScript</span><span><img src="src/icons/typescript.svg" alt="" width="18" height="18" loading="lazy" />TypeScript</span><span><img src="src/icons/react.svg" alt="" width="18" height="18" loading="lazy" />React</span><span><img src="src/icons/vuejs.svg" alt="" width="18" height="18" loading="lazy" />Vue.js</span><span><img src="src/icons/threejs.svg" alt="" width="18" height="18" loading="lazy" />Three.js</span><span><img src="src/icons/bootstrap.svg" alt="" width="18" height="18" loading="lazy" />Bootstrap</span></dd>
-        <dt>Backend</dt><dd><span><img src="src/icons/nodejs.svg" alt="" width="18" height="18" loading="lazy" />Node.js</span><span><img src="src/icons/express.svg" alt="" width="18" height="18" loading="lazy" />Express</span><span><img src="src/icons/php.svg" alt="" width="18" height="18" loading="lazy" />PHP</span><span><img src="src/icons/laravel.svg" alt="" width="18" height="18" loading="lazy" />Laravel</span><span><img src="src/icons/csharp.svg" alt="" width="18" height="18" loading="lazy" />C#</span><span><img src="src/icons/dotnetcore.svg" alt="" width="18" height="18" loading="lazy" />ASP.NET Core</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>Entity Framework</span><span><img src="src/icons/java.svg" alt="" width="18" height="18" loading="lazy" />Java</span><span><img src="src/icons/c.svg" alt="" width="18" height="18" loading="lazy" />C</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>APIs REST</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>JWT</span></dd>
-        <dt>Datos</dt><dd><span><img src="src/icons/postgresql.svg" alt="" width="18" height="18" loading="lazy" />PostgreSQL</span><span><img src="src/icons/mysql.svg" alt="" width="18" height="18" loading="lazy" />MySQL</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>SQL</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>Sequelize</span><span><img src="src/icons/supabase.svg" alt="" width="18" height="18" loading="lazy" />Supabase</span></dd>
-        <dt>Herramientas</dt><dd><span><img src="src/icons/git.svg" alt="" width="18" height="18" loading="lazy" />Git</span><span><img src="src/icons/github.svg" alt="" width="18" height="18" loading="lazy" />GitHub</span><span><img src="src/icons/vitejs.svg" alt="" width="18" height="18" loading="lazy" />Vite</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>Vitest</span><span><img src="src/icons/postman.svg" alt="" width="18" height="18" loading="lazy" />Postman</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>UML</span><span><img src="src/icons/figma.svg" alt="" width="18" height="18" loading="lazy" />Figma</span><span><img src="src/icons/vercel.svg" alt="" width="18" height="18" loading="lazy" />Vercel</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>Render</span></dd>
-        <dt>Aprendiendo</dt><dd><span><img src="src/icons/nextjs.svg" alt="" width="18" height="18" loading="lazy" />Next.js</span><span><img src="src/icons/docker.svg" alt="" width="18" height="18" loading="lazy" />Docker</span><span><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg>AWS</span><span><img src="src/icons/python.svg" alt="" width="18" height="18" loading="lazy" />Python</span></dd>
-      </dl>
-    </section>
-
-    <section>
-      <h3>Estudios</h3>
-      <article class="item">
-        <div class="fila"><h4>Tecnicatura en Desarrollo de Software</h4><span>Desde 2025</span></div>
-        <p>Universidad de La Punta, San Luis</p>
-      </article>
-      <article class="item">
-        <div class="fila"><h4>Programador Universitario en Sistemas</h4><span>Desde 2022</span></div>
-        <p>Universidad Nacional de Villa Mercedes</p>
-      </article>
-      <article class="item">
-        <div class="fila"><h4>Responsive Web Design</h4><span>2023</span></div>
-        <p>Certificación de freeCodeCamp</p>
-      </article>
-      <p class="idiomas">Idiomas: español nativo, inglés B1.</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="pie">
-      <h3>Contacto</h3>
-      <div class="acciones">
-        <a class="btn btn-ghost" href="mailto:dupre.dev@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>dupre.dev@gmail.com</a>
-        <button id="copy" class="btn btn-fill-w" type="button"><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span class="t-copy">Copiar correo</span><span class="t-ok">Copiado</span></button>
-      </div>
-      <hr />
-      <p>Desarrollado por y para Emanuel Dupre ❤️</p>
-    </div>
-  </footer>
-
-  <script>
-    (function () {
-      var b = document.getElementById("copy"), u = b.querySelector("use");
-      b.addEventListener("click", function () {
-        navigator.clipboard.writeText("dupre.dev@gmail.com").then(function () {
-          u.setAttribute("href", "#i-check"); b.classList.add("ok");
-          setTimeout(function () { u.setAttribute("href", "#i-copy"); b.classList.remove("ok"); }, 2000);
+    <script>
+      (function () {
+        var b = document.getElementById("copy"),
+          u = b.querySelector("use");
+        b.addEventListener("click", function () {
+          navigator.clipboard
+            .writeText("dupre.dev@gmail.com")
+            .then(function () {
+              u.setAttribute("href", "#i-check");
+              b.classList.add("ok");
+              setTimeout(function () {
+                u.setAttribute("href", "#i-copy");
+                b.classList.remove("ok");
+              }, 2000);
+            });
         });
-      });
-      var A = document.querySelector(".llave-a"), B = document.querySelector(".llave-b");
-      if (!A || !B || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      var meta = 0, p = 0;
-      function prog() { var m = document.documentElement.scrollHeight - innerHeight; return m > 0 ? scrollY / m : 0; }
-      addEventListener("scroll", function () { meta = prog(); }, { passive: true });
-      meta = p = prog();
-      (function frame(ms) {
-        var t = ms / 1000, W = innerWidth, H = innerHeight;
-        p += (meta - p) * 0.045;
-        A.style.transform = "translate3d(" + (W * (0.68 - 0.6 * p) + Math.sin(t * 0.5) * 10) + "px," + (H * (0.2 + 0.5 * p) + Math.cos(t * 0.4) * 14) + "px,0) rotate(" + (-6 + 22 * p) + "deg)";
-        B.style.transform = "translate3d(" + (W * (0.84 + 0.04 * p) + Math.cos(t * 0.45) * 10) + "px," + (H * (0.08 + 0.55 * p) + Math.sin(t * 0.35) * 14) + "px,0) rotate(" + (8 - 18 * p) + "deg)";
-        requestAnimationFrame(frame);
-      })(0);
-    })();
-  </script>
-<script src="./i18n.js"></script>
-</body>
+        var A = document.querySelector(".llave-a"),
+          B = document.querySelector(".llave-b");
+        if (!A || !B || matchMedia("(prefers-reduced-motion: reduce)").matches)
+          return;
+        var meta = 0,
+          p = 0;
+        function prog() {
+          var m = document.documentElement.scrollHeight - innerHeight;
+          return m > 0 ? scrollY / m : 0;
+        }
+        addEventListener(
+          "scroll",
+          function () {
+            meta = prog();
+          },
+          { passive: true },
+        );
+        meta = p = prog();
+        (function frame(ms) {
+          var t = ms / 1000,
+            W = innerWidth,
+            H = innerHeight;
+          p += (meta - p) * 0.045;
+          A.style.transform =
+            "translate3d(" +
+            (W * (0.68 - 0.6 * p) + Math.sin(t * 0.5) * 10) +
+            "px," +
+            (H * (0.2 + 0.5 * p) + Math.cos(t * 0.4) * 14) +
+            "px,0) rotate(" +
+            (-6 + 22 * p) +
+            "deg)";
+          B.style.transform =
+            "translate3d(" +
+            (W * (0.84 + 0.04 * p) + Math.cos(t * 0.45) * 10) +
+            "px," +
+            (H * (0.08 + 0.55 * p) + Math.sin(t * 0.35) * 14) +
+            "px,0) rotate(" +
+            (8 - 18 * p) +
+            "deg)";
+          requestAnimationFrame(frame);
+        })(0);
+      })();
+    </script>
+    <script src="./i18n.js"></script>
+  </body>
 </html>
